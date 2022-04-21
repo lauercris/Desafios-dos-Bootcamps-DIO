@@ -25,27 +25,23 @@ Exemplos de Entrada 	Exemplos de Saída
 
 using System;
 
-namespace Start
+class Desafio
 {
 
-    class Desafio
+    static void Main()
     {
 
-        static void Main(string[] args)
-        {
+	double A, B, C;
+	A = double.Parse(Console.ReadLine());
+	B = double.Parse(Console.ReadLine());
+	C = double.Parse(Console.ReadLine());
 
-            double A, B, C;
-	    A = double.Parse(Console.ReadLine());
-	    B = double.Parse(Console.ReadLine());
-	    C = double.Parse(Console.ReadLine());
+	double soma = (2*A) + (3*B) + (5*C);
+        double media = soma / 10;
 
-	    double soma = (2*A) + (3*B) + (5*C);
-            double media = soma / 10;
+        Console.WriteLine("MEDIA = " + media.ToString("N1"));
 
-            Console.WriteLine("MEDIA = " + media.ToString("N1"));
+        Console.ReadKey();
 
-            Console.ReadKey();
-
-        }
     }
 }
